@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Times New Roman", Times, serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, red , yellow);
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            width: 450px;
+            overflow: hidden;
+            position: relative;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h3 {
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .input-container {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .input-container input[type="text"] {
+            width: 100%;
+            padding: 10px 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        .input-container input[type="text"]:focus {
+            border-color: lightcoral;
+        }
+        .input-container .icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #ccc;
+        }
+        .button {
+            background: linear-gradient(to right, red, darkred);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            display: block;
+            width: 100%;
+        }
+        .button:hover {
+            background: linear-gradient(to right, grey, black);
+        }
+        .link {
+            margin-top: 20px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: #6a11cb;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Forgot Password</h1>
+        <h3>Enter your Email address</h3>
+        <form action="new.html" method="get">
+            <div class="input-container">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Email Address" required>
+            </div>
+            <button type="submit" class="button">Continue</button>
+        </form>
+    </div>
+</body>
+</html>
